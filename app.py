@@ -6,8 +6,8 @@ from googleapiclient.discovery import build # 유튜브 검색용 도구
 # ==========================================
 # 🔑 필수 입력: 2개의 API 키를 여기에 넣으세요!
 # ==========================================
-GEMINI_API_KEY = st.secrets["AIzaSyBqrW4bONqWs4KHPE-2dhBJoGgW7Uamz34"]
-YOUTUBE_API_KEY = st.secrets["AIzaSyCqpDL0X94T_FerOGRniGxm9IwDKMWoOcc"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 MODEL_ID = "gemini-flash-latest"
